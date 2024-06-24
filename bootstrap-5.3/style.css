@@ -1,0 +1,167 @@
+/* générale */
+/* variable */
+:root{
+    --bgColor: #040404;
+    --primaryColor: #0e97ce;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-color: #eee;
+}
+
+
+
+/* navbar */
+.navbar-brand .log-img {
+    width: 200px;
+    height: 50px;
+    object-fit: contain;
+    background-color:white;
+    border-radius: 5px;
+}
+.navbar {
+    background-color: var(--bgColor) !important;
+}
+.navbar ul li a{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.navbar ul li a.active {
+    color: var(--primaryColor) !important;
+}
+.navbar ul li a:hover{
+    color: var(--primaryColor) !important;
+    border: 2px solid var(--primaryColor);
+}
+.navbar ul li.dropdown a{
+    color: white;
+}
+.navbar ul li.dropdown ul li a{
+    color: var(--bgColor);
+}
+
+/* banière */
+.banner{
+   background-color: var(--bgColor); 
+}
+.banner .banner-img{
+    background: url(../profil.jpg) no-repeat center/contain fixed;
+}
+.banner .banner-overlay{
+    height: 500px;
+    background-color: rgb(0,0,0,0.8);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-overlay h3{
+    font-size: 50px;
+    font-weight: bold;
+}
+/* about */
+section#about .container{
+    background-color: white;
+    padding: 50px;
+    margin-top: 50px;
+}
+section#about .trai{
+    height: 2px;
+    width: 100px;
+    background-color: var(--primaryColor);
+    margin-bottom: 30px;
+}
+section#about h3{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: var(--primaryColor);
+}
+section#about .progress-bar{
+    background-color: var(--primaryColor) !important;
+}
+
+/* services  */
+section#services .trai{
+    height: 5px;
+    width: 50px;
+    background-color: var(--primaryColor);
+    margin-bottom: 30px;
+    margin: 0 auto 30px;
+}
+
+section#services .boite-icon .bi{
+    font-size: 40px;
+}
+section#services .boite-icon{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 10px solid var(--primaryColor);
+}
+section#services .boite-icon{
+    height: 110px;
+    width: 110px;
+    border-radius: 100%;
+    border: 10px solid var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    cursor: grab;
+}
+section#services .card:hover:hover .boite-icon .bi{
+    color: white !important;
+}
+section#services .card:hover .boite-icon{
+    background-color: var(--primaryColor);
+    border: 10px solid rgba(22, 158, 226, 0.384);
+    transition-duration: 0.5s;
+}
+/* work  */
+section#work{
+    background: url(../post-3.jpg) no-repeat center/cover fixed;
+}
+section#work .overlay{
+    background-color: #04668d8c;
+    height: 450px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#work .boite-icon{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    border: 10px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+}
+section#work .boite-icon .bi{
+    font-size: 30px;
+    color: white;
+}
+section#work h3{
+    font-size: 20px;
+}
+section#work p{
+    font-size: 20px;
+}
+
+/* mobile  */
+/* @media (max-width:425px){
+    .banner .banner-overlay{
+        height: 350px;
+    }
+} */
